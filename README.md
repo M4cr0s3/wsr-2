@@ -1,40 +1,36 @@
-# wsr-2
+# Небольшое описание 
 
-This template should help get you started developing with Vue 3 in Vite.
+## Установка
 
-## Recommended IDE Setup
+```bash
+git clone
+```
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
-
-## Type Support for `.vue` Imports in TS
-
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin) to make the TypeScript language service aware of `.vue` types.
-
-If the standalone TypeScript plugin doesn't feel fast enough to you, Volar has also implemented a [Take Over Mode](https://github.com/johnsoncodehk/volar/discussions/471#discussioncomment-1361669) that is more performant. You can enable it by the following steps:
-
-1. Disable the built-in TypeScript Extension
-    1) Run `Extensions: Show Built-in Extensions` from VSCode's command palette
-    2) Find `TypeScript and JavaScript Language Features`, right click and select `Disable (Workspace)`
-2. Reload the VSCode window by running `Developer: Reload Window` from the command palette.
-
-## Customize configuration
-
-See [Vite Configuration Reference](https://vitejs.dev/config/).
-
-## Project Setup
-
-```sh
+```bash
 npm install
 ```
 
-### Compile and Hot-Reload for Development
+## Запуск
 
-```sh
+```bash
 npm run dev
 ```
 
-### Type-Check, Compile and Minify for Production
+---
 
-```sh
-npm run build
-```
+### Что по факту было реализовано:
+
+- Авторизация и регистрация с cookie.
+- Соответствующие миддлвары для защиты роутов.
+- Пропагинированный вывод event программ.
+- Страница с детальной информацией о каждой программе.
+- Калькулятор итоговой стоимости заказа мероприятия (стоимость зависит от начальной стоимости мероприятия + стоимость выбранных доп. услуг. еще можно подумать над ставкой самих актеров🧐??)
+
+Что можно было бы еще потыкать:
+- Выход из аккаунта?
+- Оживить форму фидбека на странице с детальной информацией (которая "давайте сделаем проект вместе")
+- Все-таки доделать хедер, дабы в нем менялась кнопочка с "войти" на "выйти" 🥱
+
+Если маловато, то имеет смысл подергать другие разделы?
+
+P.S. по качеству кода и всякого, пожалуйста, не бейте, я вообще не заморачивался😱. Если будут вопросы — жду фидбека.
