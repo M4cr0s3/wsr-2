@@ -1,0 +1,22 @@
+{
+  "files": [],
+  "compilerOptions": {
+    "include": [
+      "src/*",
+      "src/**/*.vue",
+      "src/**/*.tsx",
+      "src/**/*.jsx",
+      "src/**/*.ts",
+      "src/**/*.js"
+    ],
+    "jsx": "preserve"
+  },
+  "references": [
+    {
+      "path": "./tsconfig.node.json"
+    },
+    {
+      "path": "./tsconfig.app.json"
+    }
+  ]
+}

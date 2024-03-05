@@ -1,0 +1,333 @@
+@import url("./fonts/fonts.css");
+@import url("./tw.css");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --background-color: #f6f5f5;
+    --box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+}
+
+header {
+    padding: 30px 0;
+}
+
+.logo {
+    gap: 1.1rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    gap: 20px;
+}
+
+li {
+    list-style: none;
+}
+
+ul li a {
+    color: black;
+}
+
+.main-screen {
+    height: 40vw;
+}
+
+.card {
+    border: 1px solid black;
+    padding: 30px 40px;
+    border-radius: 15px;
+    box-shadow: var(--box-shadow);
+}
+
+.card__title {
+    font-size: 2rem;
+}
+
+.card__description {
+    font-size: 1.2rem;
+    word-wrap: break-word;
+}
+
+.card__button {
+    margin-top: .7rem;
+    border-radius: 10px;
+    cursor: pointer;
+    color: black;
+    background-color: transparent;
+    border: 1px solid black;
+    padding: 15px 60px;
+    font-size: 1.4rem;
+}
+
+.right {
+    top: 50%;
+    right: -15%;
+    transform: translate(-50%, -50%);
+}
+
+.left {
+    top: 50%;
+    left: -10%;
+    transform: translate(-50%, -50%);
+}
+
+.arrow {
+    cursor: pointer;
+    font-size: 3rem;
+}
+
+.section-padding {
+    padding: 100px 0;
+}
+
+.section-padding-bottom {
+    padding-bottom: 100px;
+}
+
+.stat__title {
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+.stat__description {
+    font-size: 2rem;
+}
+
+.section-title {
+    font-size: 4.5rem;
+}
+
+.employee__img {
+    border-radius: 100%;
+    width: 100%;
+    max-width: 100%;
+    padding-bottom: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+select {
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color: transparent;
+    font-family: 'Manrope', sans-serif;
+    font-weight: 500;
+}
+
+.employee__title {
+    font-size: 1.5rem;
+    margin-top: 8px;
+}
+
+.employee__description {
+    font-size: .9rem;
+    margin-top: 2px;
+}
+
+.employee__card {
+    border: 1px transparent solid;
+    border-radius: 20px;
+    transition: .5s all;
+}
+
+.employee__card:hover {
+    transition: .3s all ease-in-out;
+    background-color: rgba(0, 0, 0, .05);
+}
+
+.cases {
+    flex-wrap: wrap;
+    gap: 3px;
+}
+
+.case__img {
+    width: 100%;
+    max-width: 100%;
+    padding-bottom: 100%;
+    background-size: cover;
+    background-position: center;
+    transition: .5s all;
+}
+
+.case__img:hover {
+    filter: brightness(70%);
+    transition: .3s ease-in-out all;
+}
+
+.wrapper__service__card {
+    min-height: 200px;
+    padding: 3px;
+}
+
+.service__card {
+    height: 100%;
+    font-family: 'Manrope', sans-serif;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    border: 2px solid rgba(128, 128, 128, .5);
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 15px;
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+}
+
+.steps {
+    display: grid;
+    grid-gap: 60px;
+    align-items: end;
+    grid-template-columns: repeat(3, 1fr);
+    position: relative;
+}
+
+.step__first:before {
+    content: 'Этап 1';
+    font-family: 'Manrope', sans-serif;
+    font-weight: 500;
+    transform: translateY(-100%);
+}
+
+.step__steps p {
+    margin-top: 15px;
+}
+
+.step__title {
+    font-size: 32px;
+}
+
+.step__desc {
+    position: relative;
+    padding-left: 1.7vw;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.sdf:before {
+    content: '(1)';
+    position: absolute;
+    font-size: 12px;
+    top: 0;
+    transform: translateY(50%);
+    left: 0;
+}
+
+.sds:before {
+    content: '(2)';
+    position: absolute;
+    font-size: 12px;
+    top: 0;
+    transform: translateY(50%);
+    left: 0;
+}
+
+.sdt:before {
+    content: '(3)';
+    position: absolute;
+    font-size: 12px;
+    top: 0;
+    transform: translateY(50%);
+    left: 0;
+}
+
+.sdfth:before {
+    content: '(4)';
+    position: absolute;
+    font-size: 12px;
+    top: 0;
+    transform: translateY(50%);
+    left: 0;
+}
+
+.sdfifth:before {
+    content: '(5)';
+    font-size: 12px;
+    position: absolute;
+    top: 0;
+    transform: translateY(50%);
+    left: 0;
+}
+
+.step__second:before {
+    content: 'Этап 2';
+    position: absolute;
+    transform: translateY(-100%);
+    font-family: 'Manrope', sans-serif;
+}
+
+.step__third:before {
+    content: 'Этап 3';
+    position: absolute;
+    transform: translateY(-100%);
+    font-family: 'Manrope', sans-serif;
+}
+
+input {
+    display: block;
+    outline: none;
+    padding: 5px 0;
+    border: none;
+    border-bottom: 1px solid black;
+    margin-bottom: 35px;
+    width: 50%;
+    margin-top: 10px;
+}
+
+textarea {
+    margin-top: 5px;
+    height: 135px;
+    padding: 5px;
+    border: none;
+    border-bottom: 1px solid black;
+    display: block;
+    outline: none;
+    width: 50%;
+    font-family: 'Manrope', sans-serif;
+}
+
+.budget {
+    border-radius: 50px;
+    border: 1px solid black;
+    font-family: 'Manrope', sans-serif;
+    padding: 4px 10px;
+}
+
+.active-budget {
+    color: white;
+    background: black;
+}
+
+form .card__button {
+    margin-top: 40px;
+    width: 50%;
+}
+
+footer {
+    padding: 30px 0;
+    background: var(--background-color);
+}
+
+footer .container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+footer ul {
+    gap: 10px;
+}
+
+form label {
+    width: 50%;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
